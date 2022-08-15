@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("YannD86/train-schedule")
+                    app = docker.build("yannd86/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
